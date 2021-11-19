@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+import mainapp.views as mainapp  # Здесь импортируем наш контроллер из views
+
+
 urlpatterns = [
+    path('', mainapp.index),  # Назначаем домашней странице обработчик index из views
     path('admin/', admin.site.urls),
 ]

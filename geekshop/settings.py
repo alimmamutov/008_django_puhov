@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
+    #'mainapp',
+    'mainapp.apps.MainappConfig',
+]  # Установленные приложения
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -49,9 +51,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-]
+]  # промежуточная обработка запросов
 
-ROOT_URLCONF = 'geekshop.urls'
+ROOT_URLCONF = 'geekshop.urls'  #Диспетчер адресов
 
 TEMPLATES = [
     {
