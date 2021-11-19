@@ -22,4 +22,8 @@ import mainapp.views as mainapp  # Здесь импортируем наш ко
 urlpatterns = [
     path('', mainapp.index),  # Назначаем домашней странице обработчик index из views
     path('admin/', admin.site.urls),
+    path('cart/', mainapp.cart),
+    path('checkout/', mainapp.checkout),
+    path('product-details/', mainapp.product_details),
+    path('shop/', mainapp.shop),
 ]
